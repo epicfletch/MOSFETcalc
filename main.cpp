@@ -6,7 +6,6 @@ int main(){
     switch (selection)
     {
     case 1:
-        /* code */
         break;
     
     default:
