@@ -1,7 +1,10 @@
 #ifndef MOSFET_H
 #define MOSFET_H
 
+#include <string>
+
 typedef struct {
+    std::string name;     /* MOSFET name */
     bool Type;            /* 0 for N-Channel, 1 for P-Channel */
     double Vgs;           /* Gate-Source Voltage (V) */
     double Vds;           /* Drain-Source Voltage (V) */

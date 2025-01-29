@@ -7,6 +7,12 @@
     <ClCompile Include="C:\Users\JFletcher\projects\MOSFET Calculator\Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\JFletcher\projects\MOSFET Calculator\MOSFETProfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\JFletcher\projects\MOSFET Calculator\InputParams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\JFletcher\projects\MOSFET Calculator\CMakeLists.txt" />

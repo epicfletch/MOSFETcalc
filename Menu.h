@@ -2,8 +2,8 @@
 #define MENU_H
 
 #include <iostream>
-#include "MOSFET.h"  // Include MOSFET definition if needed
+#include "MOSFET.h"
 
-int Menu(); // Function prototype
+int Menu();
 
 #endif // MENU_H

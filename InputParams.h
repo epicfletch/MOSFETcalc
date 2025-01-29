@@ -2,9 +2,9 @@
 #define INPUTPARAMS_H
 
 #include <iostream>
-#include "MOSFET.h"  // Include MOSFET definition if needed
+#include "MOSFET.h"
 
-MOSFET inputParameters(); // Function prototype
-MOSFET myMosfet;
+MOSFET inputParameters();
+MOSFET test;
 
 #endif // INPUTPARAMS_H
