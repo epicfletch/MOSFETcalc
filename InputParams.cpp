@@ -1,6 +1,7 @@
 #include "InputParams.h"
 
 MOSFET inputParameters(){
+    MOSFET test;
     /* allows user to input MOSFET parameters */
     std::cout << "Please input The MOSFET type (0 for N-CHannel, 1 for P-Channel)" << std::endl;
     std::cin >> test.Type;

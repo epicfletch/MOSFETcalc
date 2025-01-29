@@ -13,8 +13,4 @@ MOSFET LoadProfile(std::string Filepath);
 
 std::string ProfileLocation();
 
-MOSFET mosfetProfile;
-std::string Filepath; 
-std::string Filename;
-
 #endif // MOSFETPROFILES_H

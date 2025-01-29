@@ -1,7 +1,8 @@
 #include "MOSFETProfiles.h"
 
 void SaveProfile(std::string Filepath, MOSFET mosfetProfile){
-    if (fs::exists(Filepath) && fs::is_directory(Filepath)) {
+    std::string Filename;
+    if (fs::exists(Filepath) && fs::is_directory(Filepath)){
         std::cout << "Input filename" << std::endl;
         std::cin >> Filename;
         Filepath = Filepath + '/' + Filename;
@@ -33,6 +34,8 @@ void SaveProfile(std::string Filepath, MOSFET mosfetProfile){
 }
 
 MOSFET LoadProfile(std::string Filepath){
+    std::string Filename;
+    MOSFET mosfetProfile;
     if (fs::exists(Filepath) && fs::is_directory(Filepath)) {
         /* user can choose what profile to load */
         std::cout << "Input filename" << std::endl;
@@ -65,17 +68,18 @@ MOSFET LoadProfile(std::string Filepath){
 }
 
 std::string ProfileLocation(){
+        std::string FilePath;
         std::cout << "Input filepath" << std::endl;
-        std::cin >> Filepath;
-        if (fs::exists(Filepath) && fs::is_directory(Filepath)) {
+        getline(std::cin,FilePath);
+        if (fs::exists(FilePath) && fs::is_directory(FilePath)) {
             std::cout << "Directory already exists" << std::endl;
         }
         else{
-            if (fs::create_directory(Filepath)) {
-                std::cout << "Directory created successfully: " << Filepath << std::endl;
+            if (fs::create_directory(FilePath)) {
+                std::cout << "Directory created successfully: " << FilePath << std::endl;
             } else {
                 std::cerr << "Failed to create the directory" << std::endl;
             }
         }
-        return Filepath;
+        return FilePath;
 }
