@@ -1,0 +1,3 @@
+C:/Users/JFletcher/projects/MOSFET Calculator/build/CMakeFiles/MOSFETcalc.dir
+C:/Users/JFletcher/projects/MOSFET Calculator/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/JFletcher/projects/MOSFET Calculator/build/CMakeFiles/ZERO_CHECK.dir
